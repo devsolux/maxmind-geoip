@@ -1,13 +1,5 @@
 name: Build rules dat files
-on:
-  workflow_dispatch:
-  # schedule:
-  # - cron: "30 22 * * *" # 6:30 AM UTC+8
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - "**/README.md"
+on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
